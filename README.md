@@ -10,14 +10,16 @@
 ## 2. Realizacija prema 3NF
 - [x] a) kreiranje baze (tablice,atributi, relacije)
 - [ ] b) najmanje po jedan od svake vrste triggera
-- [ ] c) najmanje po jednu proceduru i funkciju koje primaju parametre i vraćaju vrijednosti
-- [ ] d) najmanje jednu explicitnu transakciju koja će imati najmanje jedan savepoint
+- [x] c) najmanje po jednu proceduru i funkciju koje primaju parametre i vraćaju vrijednosti
+- [x] d) najmanje jednu explicitnu transakciju koja će imati najmanje jedan savepoint
 
 ## Funkcijalnosti baze
-- Dobivanje svih narudžbi za određen datum
-- Dobivanje svih narudžbi u određenom periodu
-- Dobivanje artikala po tipu
-- Trigger koji Update-a tablicu StavkeZaNarudzbu s razlikom tablica ArtikliNarudzbe i Skladiste kada se doda nova narudžba
+- [x] Dobivanje svih narudžbi za određen datum
+- [x]  Dobivanje svih narudžbi u određenom periodu
+- [x]  Dobivanje artikala po tipu
+- [x]  INSERT Trigger koji Update-a tablicu StavkeZaNarudzbu s razlikom tablica ArtikliNarudzbe i Skladiste kada se doda nova narudžba
+- [x]  DELETE trigger koji izbrise stavke ArtikliNarudzbe s ID-em narudzbe koja se izbrisala
+- [ ]  UPDATE trigger
 
 > DDL i DML SQL kod
 > prirodni ključ - ključ sa poslovnom vrijednosti i logičkom povezanosti s tablicom
