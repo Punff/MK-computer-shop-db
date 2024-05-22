@@ -28,46 +28,31 @@ Zaposlenica u bazu podataka zapisuje:
 Popis komponenti se uspoređuje s skladištem te se komponente 
 koje nisu na skladištu automatski dodaju na popis za narudžbu od dobavljača.
 Popis komponenti s narudžbe se dodaju na račun
-
 ### Tablice
 
-| firma           |                  |
-|-----------------|------------------|
-| OIB             | (PK)             |
-| Naziv           |                  |
-| Vlasnik         |                  |
-| PostanskiBroj   |                  |
-| Grad            |                  |
+| firma           |                  | račun           |                  | klijent         |                  |
+|-----------------|------------------|-----------------|------------------|-----------------|------------------|
+| OIB             | (PK)             | SifraRacuna     | (PK)             | OIB_klijent     | (PK)             |
+| Naziv           |                  | IdNarudzba      | (FK)             | Naziv           |                  |
+| Vlasnik         |                  | OIB             | (FK)             | Telefon         |                  |
+| PostanskiBroj   |                  | DatumIzdavanja  |                  | Email           |                  |
+| Grad            |                  |                  |                  |                  |                  |
 
-| račun           |                  |
-|-----------------|------------------|
-| SifraRacuna     | (PK)             |
-| IdNarudzba      | (FK)             |
-| OIB             | (FK)             |
-| DatumIzdavanja  |                  |
+| zaposlenik      |                  | narudžba        |                  | popis_artikala  |                  |
+|-----------------|------------------|-----------------|------------------|-----------------|------------------|
+| OIB_zaposlenik  | (PK)             | id_narudzba     | (PK)             | id_narudzba     | (FK)             |
+| ime             |                  | OIB_zaposlenik  | (FK)             | id_artikal      | (FK)             |
+| prezime         |                  | OIB_klijent     | (FK)             | Kolicina        |                  |
+| telefon         |                  | DatumZaprimanja |                  | UkupnaCijena    |                  |
+| email           |                  | DatumIsporuke   |                  |                  |                  |
 
-| klijent         |                  |
-|-----------------|------------------|
-| OIB_klijent     | (PK)             |
-| Naziv           |                  |
-| Telefon         |                  |
-| Email           |                  |
-
-| zaposlenik      |                  |
-|-----------------|------------------|
-| OIB_zaposlenik  | (PK)             |
-| ime             |                  |
-| prezime         |                  |
-| telefon         |                  |
-| email           |                  |
-
-| narudžba        |                  |
-|-----------------|------------------|
-| id_narudzba     | (PK)             |
-| OIB_zaposlenik  | (FK)             |
-| OIB_klijent     | (FK)             |
-| DatumZaprimanja |                  |
-| DatumIsporuke   |                  |
+| skladište       |                  | artikli         |                  | dobavljač       |                  |
+|-----------------|------------------|-----------------|------------------|-----------------|------------------|
+| id_stavka       | (PK)             | id_artikal      | (PK)             | OIB_dobavljac   | (PK)             |
+| OIB_dobavljac   | (FK)             | naziv           |                  | Naziv           |                  |
+| id_artikal      | (FK)             | model           |                  | Vlasnik         |                  |
+| Cijena          |                  | proizvodjac     |                  | PostanskiBroj   |                  |
+| DatumDospijeca  |                  |                  |                  | Grad            |                  |
 
 | popis_artikala  |                  |
 |-----------------|------------------|
