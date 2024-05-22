@@ -4,12 +4,12 @@
 - [x] a) Dokumentacija korisničkog zahtjeva + UserStory
 - [x] b) Definicija atributa (minimalno 20)
 - [x] c) Određivanje funkcionalnih ovisnosti (minimalno 5)
-- [ ] d) Određivanje i izbor primarnih ključeva (ograda atributa)
-- [ ] e) Dekompozicija 3NF i BCNF korištenjem algoritama za dekompoziciju
+- [x] d) Određivanje i izbor primarnih ključeva (ograda atributa)
+- [x] e) Dekompozicija 3NF i BCNF korištenjem algoritama za dekompoziciju
 
 ## 2. Realizacija prema 3NF
 - [x] a) kreiranje baze (tablice,atributi, relacije)
-- [ ] b) najmanje po jedan od svake vrste triggera
+- [x] b) najmanje po jedan od svake vrste triggera
 - [x] c) najmanje po jednu proceduru i funkciju koje primaju parametre i vraćaju vrijednosti
 - [x] d) najmanje jednu explicitnu transakciju koja će imati najmanje jedan savepoint
 
@@ -19,11 +19,11 @@
 - [x]  Dobivanje artikala po tipu
 - [x]  INSERT Trigger koji Update-a tablicu StavkeZaNarudzbu s razlikom tablica ArtikliNarudzbe i Skladiste kada se doda nova narudžba
 - [x]  DELETE trigger koji izbrise stavke ArtikliNarudzbe s ID-em narudzbe koja se izbrisala
-- [ ]  UPDATE trigger
+- [x]  UPDATE trigger
 
-> DDL i DML SQL kod
-> prirodni ključ - ključ sa poslovnom vrijednosti i logičkom povezanosti s tablicom
-> surogat ključ - obično autonum field ID
+> DDL i DML SQL kod \\
+> prirodni ključ - ključ sa poslovnom vrijednosti i logičkom povezanosti s tablicom \\
+> surogat ključ - obično autonum field ID \\
 
 ## MK Computer Shop
 
