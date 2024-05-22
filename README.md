@@ -13,6 +13,12 @@
 - [ ] c) najmanje po jednu proceduru i funkciju koje primaju parametre i vraćaju vrijednosti
 - [ ] d) najmanje jednu explicitnu transakciju koja će imati najmanje jedan savepoint
 
+## Funkcijalnosti baze
+- Dobivanje svih narudžbi za određen datum
+- Dobivanje svih narudžbi u određenom periodu
+- Dobivanje artikala po tipu
+- Trigger koji Update-a tablicu StavkeZaNarudzbu s razlikom tablica ArtikliNarudzbe i Skladiste kada se doda nova narudžba
+
 > DDL i DML SQL kod
 > prirodni ključ - ključ sa poslovnom vrijednosti i logičkom povezanosti s tablicom
 > surogat ključ - obično autonum field ID
