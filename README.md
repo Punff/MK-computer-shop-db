@@ -8,7 +8,7 @@
 - [ ] e) Dekompozicija 3NF i BCNF korištenjem algoritama za dekompoziciju
 
 ## 2. Realizacija prema 3NF
-- [ ] a) kreiranje baze (tablice,atributi, relacije)
+- [x] a) kreiranje baze (tablice,atributi, relacije)
 - [ ] b) najmanje po jedan od svake vrste triggera
 - [ ] c) najmanje po jednu proceduru i funkciju koje primaju parametre i vraćaju vrijednosti
 - [ ] d) najmanje jednu explicitnu transakciju koja će imati najmanje jedan savepoint
